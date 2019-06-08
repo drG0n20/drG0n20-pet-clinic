@@ -1,4 +1,4 @@
-package drg0n20.srping.drg0n20petclinic;
+package drg0n20petclinic;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
