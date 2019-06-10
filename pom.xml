@@ -40,8 +40,8 @@
     </build>
 
     <scm>
-        <!--<developerConnection>scm:git:https://github.com/drG0n20/drG0n20-pet-clinic.git</developerConnection>-->
-        <developerConnection>scm:git:git@github.com:drG0n20/drG0n20-pet-clinic.git</developerConnection>
+        <developerConnection>scm:git:https://github.com/drG0n20/drG0n20-pet-clinic.git</developerConnection>
+        <!--<developerConnection>scm:git:git@github.com:drG0n20/drG0n20-pet-clinic.git</developerConnection>-->
       <tag>drg0n20-pet-clinic-0.0.1</tag>
   </scm>
 
