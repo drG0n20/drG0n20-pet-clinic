@@ -14,7 +14,7 @@
     </parent>
     <groupId>drg0n20.srping</groupId>
     <artifactId>drg0n20-pet-clinic</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.1</version>
     <name>drg0n20-pet-clinic</name>
     <description>drg0n20 Pet Clinic Project</description>
 
