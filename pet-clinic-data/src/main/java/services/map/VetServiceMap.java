@@ -1,10 +1,12 @@
 package services.map;
 
 import model.Vet;
+import org.springframework.stereotype.Service;
 import services.VetService;
 
 import java.util.Set;
 
+@Service
 public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
 
     @Override
@@ -13,13 +15,8 @@ public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetS
     }
 
     @Override
-    public void deleteById(Long id) {
-        super.deleteById(id);
-    }
-
-    @Override
-    public void delete(Vet object) {
-        super.delete(object);
+    public Vet findById(Long id) {
+        return super.findById(id);
     }
 
     @Override
@@ -28,7 +25,12 @@ public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetS
     }
 
     @Override
-    public Vet findById(Long id) {
-        return super.findById(id);
+    public void delete(Vet object) {
+        super.delete(object);
+    }
+
+    @Override
+    public void deleteById(Long id) {
+        super.deleteById(id);
     }
 }
