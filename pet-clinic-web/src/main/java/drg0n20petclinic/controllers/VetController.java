@@ -1,12 +1,19 @@
 package drg0n20petclinic.controllers;
 
+import drg0n20petclinic.services.VetService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class VetController {
 
-    @RequestMapping({"/vets", "/vets/index", "/vets/index.html"})
+    private final VetService vetService;
+
+    public VetController(VetService vetService) {
+        this.vetService = vetService;
+    }
+
+    @RequestMapping({"/vets", "/vets/index", "/vets/index.html", "/vets.html"})
     public String listVets() {
         return "vets/index";
     }
