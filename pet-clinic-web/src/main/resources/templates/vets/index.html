@@ -8,5 +8,21 @@
 <!--/*@thymesVar id="vet" type="pet-clinic-data.drg0n20petclinic.model.Vet"*/-->
 <h1 th:text="'List of Vets'">List of Vets...</h1>
 
+<table>
+    <thread>
+        <tr>
+            <th>Id</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+        </tr>
+    </thread>
+    <tbody>
+    <tr th:each="vet : ${vets}">
+        <td th:text="${vet.id}">1</td>
+        <td th:text="${vet.firstName}">Joe</td>
+        <td th:text="${vet.lastName}">Buck</td>
+    </tr>
+    </tbody>
+</table>
 </body>
 </html>
