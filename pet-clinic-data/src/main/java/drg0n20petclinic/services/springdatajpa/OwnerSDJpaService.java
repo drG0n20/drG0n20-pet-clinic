@@ -26,7 +26,6 @@ public class OwnerSDJpaService implements OwnerService {
         this.petTypeRepository = petTypeRepository;
     }
 
-
     @Override
     public Owner findByLastName(String lastName) {
         return ownerRepository.findByLastName(lastName);
@@ -36,7 +35,7 @@ public class OwnerSDJpaService implements OwnerService {
     public Set<Owner> findAll() {
         Set<Owner> owners = new HashSet<>();
         ownerRepository.findAll().forEach(owners::add);
-        return null;
+        return owners;
     }
 
     @Override

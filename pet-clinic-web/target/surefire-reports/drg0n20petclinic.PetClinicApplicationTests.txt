@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: drg0n20petclinic.PetClinicApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in drg0n20petclinic.PetClinicApplicationTests
