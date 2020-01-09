@@ -19,10 +19,9 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.1.5.RELEASE</version>
+        <version>2.1.0.RELEASE</version>
         <relativePath /> <!-- lookup parent from repository -->
     </parent>
-
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -78,10 +77,9 @@
         </plugins>
     </build>
 
-    <!--<scm>-->
-        <!--<developerConnection>scm:git:https://github.com/drG0n20/drG0n20-pet-clinic.git</developerConnection>-->
-        <!--&lt;!&ndash;<developerConnection>scm:git:git@github.com:drG0n20/drG0n20-pet-clinic.git</developerConnection>&ndash;&gt;-->
-      <!--<tag>drg0n20-pet-clinic-0.0.1</tag>-->
-    <!--</scm>-->
+    <scm>
+        <developerConnection>scm:git@github.com:drG0n20/drG0n20-pet-clinic.git</developerConnection>
+      <tag>HEAD</tag>
+    </scm>
 
 </project>
