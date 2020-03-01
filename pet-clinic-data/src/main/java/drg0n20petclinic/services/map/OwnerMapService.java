@@ -8,6 +8,7 @@ import drg0n20petclinic.services.PetTypeService;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Set;
 
 @Service
@@ -21,7 +22,6 @@ public class OwnerMapService extends AbstractMapService<Owner, Long> implements 
         this.petTypeService = petTypeService;
         this.petService = petService;
     }
-
 
     @Override
     public Set<Owner> findAll() {
@@ -46,6 +46,7 @@ public class OwnerMapService extends AbstractMapService<Owner, Long> implements 
                     } else {
                         throw new RuntimeException("Pet Type is required");
                     }
+
                     if (pet.getId() == null) {
                         Pet savedPet = petService.save(pet);
                         pet.setId(savedPet.getId());
@@ -54,6 +55,7 @@ public class OwnerMapService extends AbstractMapService<Owner, Long> implements 
             }
 
             return super.save(object);
+
         } else {
             return null;
         }
@@ -76,5 +78,13 @@ public class OwnerMapService extends AbstractMapService<Owner, Long> implements 
                 .filter(owner -> owner.getLastName().equalsIgnoreCase(lastName))
                 .findFirst()
                 .orElse(null);
+    }
+
+    @Override
+    public List<Owner> findAllByLastNameLike(String lastName) {
+
+        //todo - impl
+
+        return null;
     }
 }
