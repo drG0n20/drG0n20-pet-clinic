@@ -94,10 +94,10 @@
             <version>2.22.0</version>
             <scope>test</scope>
         </dependency>
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.projectlombok</groupId>-->
+<!--            <artifactId>lombok</artifactId>-->
+<!--        </dependency>-->
     </dependencies>
 
     <build>
@@ -117,9 +117,9 @@
                 <configuration>
                     <wroManagerFactory>ro.isdc.wro.maven.plugin.manager.factory.ConfigurableWroManagerFactory</wroManagerFactory>
                     <cssDestinationFolder>${project.build.directory}/classes/static/resources/css</cssDestinationFolder>
-                    <wroFile>${basedir}/src/main/wro/wro.xml</wroFile>
-                    <extraConfigFile>${basedir}/src/main/wro/wro.properties</extraConfigFile>
-                    <contextFolder>${basedir}/src/main/less</contextFolder>
+                    <wroFile>${project.basedir}/src/main/wro/wro.xml</wroFile>
+                    <extraConfigFile>${project.basedir}/src/main/wro/wro.properties</extraConfigFile>
+                    <contextFolder>${project.basedir}/src/main/less</contextFolder>
                 </configuration>
                 <dependencies>
                     <dependency>
